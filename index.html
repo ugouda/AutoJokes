@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="joke-icon-4.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Montserrat&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans&family=Quicksand&family=Raleway:wght@200&family=Roboto:wght@300;400&family=Tilt+Neon&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Londrina Shadow', cursive;
+            padding: 3vh;
+            height: 91.6vh;
+            background: linear-gradient(112.1deg, #202639 11.4%, #3f4c77 70.2%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+            font-family: 'Londrina Shadow', cursive;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            width: fit-content;
+            padding: .5rem 2rem;
+            border-radius: 10px;
+            background: #414963;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.319);
+            margin: 1rem 0;
+        }
+
+        #span {
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="span"></span>
+    <button onclick="button()">Click</button>
+</body>
+<script>
+    const button = () => {
+        var n = Math.floor(Math.random() * 10);
+        console.log(n)
+        result.innerHTML = jokes[n]
+    }
+    let result = document.getElementById('span');
+    let jokes = [`A woman gets on a bus with her baby. The bus driver says: “Ugh, that’s the ugliest baby I’ve ever seen!” The woman walks to the rear of the bus and sits down, fuming. She says to a man next to her: “The driver just insulted me!” The man says: “You go up there and tell him off. Go on, I’ll hold your monkey for you.”`, `I said to the Gym instructor “Can you teach me to do the splits?” He said, “How flexible are you?” I said, “I can’t make Tuesdays.”`, `Police arrested two kids yesterday, one was drinking battery acid, the other was eating fireworks. They charged one – and let the other one off.`, `Doc, I can’t stop singing the ‘Green Green Grass of Home’. He said: “That sounds like Tom Jones syndrome.” “Is it common?” I asked.  “It’s not unusual” he replied.`, `I’m on a whiskey diet. I’ve lost three days already.`, `My therapist says I have a preoccupation with vengeance. We’ll see about that.`, `A priest, a rabbi and a vicar walk into a bar. The barman says, “Is this some kind of joke?”`, `A group of chess enthusiasts checked into a hotel and were standing in the lobby discussing their recent tournament victories. After about an hour, the manager came out of the office and asked them to disperse. “But why?” they asked, as they moved off. “because,” he said “I can’t stand chess nuts boasting in an open foyer.”`, `I was in Tesco’s and I saw this man and woman wrapped in a barcode. I said, “Are you two an item?”`, `I was having dinner with Garry Kasporov (world chess champion) and there was a check tablecloth. It took him two hours to pass me the salt.`];
+
+
+</script>
+
+</html>
